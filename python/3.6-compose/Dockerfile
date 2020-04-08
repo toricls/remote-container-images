@@ -27,11 +27,6 @@ RUN apt-get update \
     # Verify git, process tools, lsb-release (common in install instructions for CLIs) installed
     && apt-get -y install git openssh-client less iproute2 procps lsb-release \
     #
-    # Install flake8
-    && pip --disable-pip-version-check --no-cache-dir install flake8 \
-    # Install pytest
-    && pip --disable-pip-version-check --no-cache-dir install pytest \
-    #
     # Update Python environment based on requirements.txt
     # && pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
     # && rm -rf /tmp/pip-tmp \
